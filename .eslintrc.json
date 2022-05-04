@@ -1,0 +1,33 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2021
+	},
+
+	"env": {
+		"node": true,
+		"es2021": true
+	},
+
+	"globals": {},
+
+	"plugins": [
+		"editorconfig",
+		"json",
+		"node",
+		"prettier",
+		"security",
+		"security-node"
+	],
+
+	"extends": [
+		"eslint:recommended",
+		"plugin:editorconfig/noconflict",
+		"plugin:prettier/recommended",
+		"plugin:json/recommended",
+		"plugin:node/recommended",
+		"plugin:security/recommended",
+		"plugin:security-node/recommended"
+	],
+
+	"rules": {}
+}

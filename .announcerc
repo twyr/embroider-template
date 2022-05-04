@@ -1,0 +1,38 @@
+{
+	'prepare': {
+		'ignoreFolders': '.github, .husky, .vscode, CHANGELOG.md'
+	},
+
+	'release': {
+		'commit': false,
+		'githubToken': null,
+
+		'message': '',
+
+		'noTag': false,
+		'tag': '',
+		'tagName': 'V${version}',
+		'tagMessage': 'The spaghetti recipe at the time of releasing V${version}',
+
+		'noRelease': false,
+		'releaseName': 'V${version} Release',
+		'releaseMessage': '',
+
+		'outputFormat': 'all',
+		'outputPath': 'dist/release-notes',
+
+		'upstream': 'twyr'
+	},
+
+	'publish': {
+		'access': 'public',
+		'distTag': 'version_default',
+		'dryRun': false,
+
+		'githubToken': null,
+		'npmToken': null,
+
+		'releaseName': 'V${version} Release',
+		'upstream': 'twyr'
+	}
+}

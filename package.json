@@ -1,0 +1,66 @@
+{
+	"name": "@twyr/embroider-template",
+	"private": true,
+	"displayName": "Embroider Template",
+	"description": "Monorepo for an example Ember v4.0+ addon implementation using the Embroider Build System",
+	"homepage": "https://github.com/twyr/embroider-template#readme",
+	"license": "MITNFA",
+	"readme": "README.md",
+	"version": "0.1.1",
+	"author": {
+		"name": "Vish Desai",
+		"email": "shadyvd@hotmail.com",
+		"url": "https://github.com/shadyvd"
+	},
+	"contributors": [
+		{
+			"name": "Vish Desai",
+			"email": "shadyvd@hotmail.com",
+			"url": "https://github.com/shadyvd"
+		}
+	],
+	"maintainers": [
+		{
+			"name": "Vish Desai",
+			"email": "shadyvd@hotmail.com",
+			"url": "https://github.com/shadyvd"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/twyr/embroider-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/twyr/embroider-template/issues"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "16.2.4",
+		"@commitlint/config-conventional": "16.2.4",
+		"commitizen": "4.2.4",
+		"cz-customizable": "6.3.0",
+		"eslint": "8.14.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-editorconfig": "3.2.0",
+		"eslint-plugin-json": "3.1.0",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-prettier": "4.0.0",
+		"eslint-plugin-security": "1.5.0",
+		"eslint-plugin-security-node": "1.1.1",
+		"git-cz": "4.8.0",
+		"git-split-diffs": "0.10.0",
+		"husky": "7.0.4",
+		"is-ci": "3.0.1",
+		"lerna": "4.0.0",
+		"lint-staged": "12.4.1"
+	},
+	"scripts": {
+		"lint-staged": "npx --no-install lint-staged --allow-empty",
+		"prepare": "is-ci || npx --no-install husky install"
+	},
+	"engines": {
+		"node": ">= 14"
+	},
+	"workspaces": [
+		"packages/*"
+	]
+}
