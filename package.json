@@ -33,6 +33,11 @@
 	"bugs": {
 		"url": "https://github.com/twyr/embroider-template/issues"
 	},
+	"dependencies": {
+		"@embroider/addon-shim": "1.6.0",
+		"@glimmer/component": "1.1.2",
+		"@glimmer/tracking": "1.1.2"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "16.2.4",
 		"@commitlint/config-conventional": "16.2.4",
@@ -55,7 +60,7 @@
 	},
 	"scripts": {
 		"lint-staged": "npx --no-install lint-staged --allow-empty",
-		"prepare": "is-ci || npx --no-install husky install"
+		"prepare": "(is-ci || npx --no-install husky install) && yarn workspaces run prepare"
 	},
 	"engines": {
 		"node": ">= 14"
