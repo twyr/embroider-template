@@ -1,0 +1,6 @@
+{
+	"*.hbs": "npx ember-template-lint --fix",
+	"*.html": "npx prettier --write",
+	"*.js": ["npx prettier --write", "npx eslint --cache --fix"],
+	"*.json": ["npx prettier --write", "npx eslint --cache --fix"]
+}

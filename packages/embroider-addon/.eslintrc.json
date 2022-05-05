@@ -1,0 +1,44 @@
+{
+	"root": true,
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module",
+		"requireConfigFile": true,
+		"ecmaFeatures": {
+			"legacyDecorators": true
+		}
+	},
+	"plugins": ["ember", "json", "prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:ember/recommended",
+		"plugin:json/recommended",
+		"plugin:prettier/recommended"
+	],
+	"env": {
+		"browser": true,
+		"node": false
+	},
+	"rules": {},
+	"overrides": [
+		{
+			"files": [".template-lintrc.js", "addon-main.js"],
+			"excludedFiles": ["addon/**"],
+			"parserOptions": {
+				"ecmaVersion": 2021,
+				"sourceType": "script"
+			},
+			"env": {
+				"browser": false,
+				"node": true
+			},
+			"plugins": ["json", "node"],
+			"extends": ["plugin:json/recommended", "plugin:node/recommended"],
+			"rules": {
+				"node/no-extraneous-require": "off",
+				"node/no-unpublished-require": "off"
+			}
+		}
+	]
+}
