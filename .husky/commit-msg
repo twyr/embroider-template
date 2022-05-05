@@ -1,5 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo commit-msg: $1
-git interpret-trailers --trailer sign --in-place $1 && npx --no-install commitlint --edit $1
+git interpret-trailers --trailer sign --in-place $1 && npx commitlint --edit $1
