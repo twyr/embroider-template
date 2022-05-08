@@ -57,6 +57,11 @@ export default {
 		// See `babel.config.json` for the actual Babel configuration!
 		babel({ babelHelpers: 'bundled' }),
 
+		// Follow the V2 Addon rules about dependencies. Your code can import from
+		// `dependencies` and `peerDependencies` as well as standard Ember-provided
+		// package names.
+		addon.dependencies(),
+
 		// Ensure that standalone .hbs files are properly integrated as Javascript.
 		addon.hbs(),
 

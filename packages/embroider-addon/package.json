@@ -5,9 +5,10 @@
 	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-addon",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "0.1.1",
+	"version": "0.2.1",
 	"keywords": [
-		"ember-addon"
+		"ember-addon",
+		"embroider"
 	],
 	"author": {
 		"name": "Vish Desai",
@@ -37,15 +38,21 @@
 	},
 	"exports": {
 		"./*": "./dist/*",
-		"./addon-main.js": "./addon-main.js",
-		"./build-injections.js": "./build-injections.js"
+		"./addon-main.js": "./addon-main.js"
 	},
 	"files": [
 		"dist",
 		"addon-main.js",
-		"build-injections.js",
 		"README.md"
 	],
+	"dependencies": {
+		"@embroider/addon-shim": "1.6.0",
+		"@embroider/util": "1.6.0",
+		"@glimmer/component": "1.1.2",
+		"@glimmer/tracking": "1.1.2",
+		"ember-debug-logger": "2.1.1",
+		"ember-modifier": "3.2.7"
+	},
 	"devDependencies": {
 		"@babel/core": "7.17.10",
 		"@babel/eslint-parser": "7.17.0",
@@ -56,13 +63,13 @@
 		"ember-cli": "4.3.0",
 		"ember-template-lint": "4.6.0",
 		"ember-template-lint-plugin-prettier": "4.0.0",
-		"eslint": "8.14.0",
+		"eslint": "8.15.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-ember": "10.6.1",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-prettier": "4.0.0",
 		"prettier": "2.6.2",
-		"rollup": "2.72.0"
+		"rollup": "2.72.1"
 	},
 	"scripts": {
 		"build": "npx rollup --config",
@@ -91,9 +98,10 @@
 		"version": 2,
 		"type": "addon",
 		"main": "addon-main.js",
-		"build": "build-injections.js",
+		"build": "addon-main.js",
 		"app-js": {
-			"./components/simple/index.js": "./dist/_app_/components/simple/index.js"
+			"./components/very-simple-one/index.js": "./dist/_app_/components/very-simple-one/index.js",
+			"./components/very-simple-two/index.js": "./dist/_app_/components/very-simple-two/index.js"
 		}
 	}
 }

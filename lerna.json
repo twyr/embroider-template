@@ -1,11 +1,9 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.1.1",
-  "command": {
-    "init": {
-      "exact": true
-    }
-  }
+	"packages": ["packages/*"],
+	"version": "0.2.1",
+	"command": {
+		"init": {
+			"exact": true
+		}
+	}
 }
