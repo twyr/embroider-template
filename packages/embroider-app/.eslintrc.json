@@ -1,0 +1,54 @@
+{
+	"root": true,
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module",
+		"requireConfigFile": true,
+		"ecmaFeatures": {
+			"legacyDecorators": true
+		}
+	},
+	"plugins": ["ember", "json", "prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:ember/recommended",
+		"plugin:json/recommended",
+		"plugin:prettier/recommended"
+	],
+	"env": {
+		"browser": true,
+		"node": false
+	},
+	"rules": {},
+	"overrides": [
+		{
+			"files": [
+				".template-lintrc.js",
+				"./ember-cli-build.js",
+				"./testem.js",
+				"./blueprints/*/index.js",
+				"./config/**/*.js"
+			],
+			"excludedFiles": ["app/**"],
+			"parserOptions": {
+				"ecmaVersion": 2021,
+				"sourceType": "script"
+			},
+			"env": {
+				"browser": false,
+				"node": true
+			},
+			"plugins": ["json", "node"],
+			"extends": ["plugin:json/recommended", "plugin:node/recommended"],
+			"rules": {
+				"node/no-extraneous-require": "off",
+				"node/no-unpublished-require": "off"
+			}
+		},
+		{
+			"files": ["tests/**/*-test.{js,ts}"],
+			"extends": ["plugin:qunit/recommended"]
+		}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"name": "embroider-app",
+	"private": true,
+	"displayName": "Test App for Embroider App",
+	"description": "Test App for the Basic Ember v4.0+ Addon using the Embroider build system",
+	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-app",
+	"license": "MITNFA",
+	"readme": "README.md",
+	"version": "0.2.1",
+	"keywords": [
+		"ember",
+		"embroider"
+	],
+	"author": {
+		"name": "Vish Desai",
+		"email": "shadyvd@hotmail.com",
+		"url": "https://github.com/shadyvd"
+	},
+	"contributors": [
+		{
+			"name": "Vish Desai",
+			"email": "shadyvd@hotmail.com",
+			"url": "https://github.com/shadyvd"
+		}
+	],
+	"maintainers": [
+		{
+			"name": "Vish Desai",
+			"email": "shadyvd@hotmail.com",
+			"url": "https://github.com/shadyvd"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/twyr/embroider-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/twyr/embroider-template/issues"
+	},
+	"directories": {
+		"doc": "doc",
+		"test": "tests"
+	},
+	"devDependencies": {
+		"@ember/optional-features": "2.0.0",
+		"@ember/test-helpers": "2.7.0",
+		"@embroider/compat": "1.6.0",
+		"@embroider/core": "1.6.0",
+		"@embroider/webpack": "1.6.0",
+		"@glimmer/component": "1.1.2",
+		"@glimmer/tracking": "1.1.2",
+		"@twyr/embroider-addon": "0.2.1",
+		"babel-eslint": "10.1.0",
+		"broccoli-asset-rev": "3.0.0",
+		"ember-auto-import": "2.4.1",
+		"ember-cli": "4.3.0",
+		"ember-cli-app-version": "5.0.0",
+		"ember-cli-babel": "7.26.11",
+		"ember-cli-dependency-checker": "3.3.1",
+		"ember-cli-htmlbars": "6.0.1",
+		"ember-cli-inject-live-reload": "2.1.0",
+		"ember-cli-sri": "2.1.1",
+		"ember-cli-terser": "4.0.2",
+		"ember-data": "4.3.0",
+		"ember-export-application-global": "2.0.1",
+		"ember-fetch": "8.1.1",
+		"ember-load-initializers": "2.1.2",
+		"ember-page-title": "7.0.0",
+		"ember-qunit": "5.1.5",
+		"ember-resolver": "8.0.3",
+		"ember-source": "4.4.0",
+		"ember-template-lint": "4.6.0",
+		"eslint": "8.15.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-ember": "10.6.1",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-prettier": "4.0.0",
+		"eslint-plugin-qunit": "7.2.0",
+		"loader.js": "4.7.0",
+		"prettier": "2.6.2",
+		"qunit": "2.19.1",
+		"qunit-dom": "2.0.0",
+		"webpack": "5.72.0"
+	},
+	"scripts": {
+		"build": "ember build --environment=production",
+		"build:clean": "mkdir -p ./dist && rm -rf ./dist && npm run build && npm run lint:fix",
+		"lint": "npm run lint:hbs && npm run lint:js && npm run lint:misc",
+		"lint:fix": "npm run lint:hbs:fix && npm run lint:js:fix && npm run lint:misc:fix",
+		"lint:hbs": "npx ember-template-lint './**/*.hbs'",
+		"lint:hbs:fix": "npx ember-template-lint './**/*.hbs' --fix",
+		"lint:js": "npx prettier './**/*.{js,json}' --no-error-on-unmatched-pattern --list-different && npx eslint './**/*.{js,json}' --no-error-on-unmatched-pattern --cache",
+		"lint:js:fix": "npx prettier './**/*.{js,json}' --no-error-on-unmatched-pattern --write && npx eslint './**/*.{js,json}' --no-error-on-unmatched-pattern --cache --fix",
+		"lint:misc": "npx prettier './**/*.{html,yml}' --no-error-on-unmatched-pattern --list-different",
+		"lint:misc:fix": "npx prettier './**/*.{html,yml}' --no-error-on-unmatched-pattern --write",
+		"lint-staged": "npx lint-staged --allow-empty",
+		"prepare": "npm run build:clean",
+		"start": "ember serve --environment=production",
+		"start:clean": "mkdir -p ./dist && rm -rf ./dist && npm run lint:fix && npm run start",
+		"test": "npm run lint && npm run test:ember",
+		"test:ember": "ember test"
+	},
+	"engines": {
+		"node": ">= 14"
+	},
+	"ember": {
+		"edition": "octane"
+	}
+}
