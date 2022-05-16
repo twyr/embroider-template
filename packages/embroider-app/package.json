@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-app",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "0.2.1",
+	"version": "0.3.1",
 	"keywords": [
 		"ember",
 		"embroider"
@@ -46,10 +46,11 @@
 		"@ember/test-helpers": "2.7.0",
 		"@embroider/compat": "1.6.0",
 		"@embroider/core": "1.6.0",
+		"@embroider/macros": "1.6.0",
 		"@embroider/webpack": "1.6.0",
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2",
-		"@twyr/embroider-addon": "0.2.1",
+		"@twyr/embroider-addon": "0.3.1",
 		"babel-eslint": "10.1.0",
 		"broccoli-asset-rev": "3.0.0",
 		"ember-auto-import": "2.4.1",
@@ -69,7 +70,7 @@
 		"ember-qunit": "5.1.5",
 		"ember-resolver": "8.0.3",
 		"ember-source": "4.4.0",
-		"ember-template-lint": "4.7.0",
+		"ember-template-lint": "4.8.0",
 		"eslint": "8.15.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-ember": "10.6.1",
@@ -80,6 +81,7 @@
 		"prettier": "2.6.2",
 		"qunit": "2.19.1",
 		"qunit-dom": "2.0.0",
+		"safe-json-stringify": "1.2.0",
 		"webpack": "5.72.1"
 	},
 	"scripts": {
