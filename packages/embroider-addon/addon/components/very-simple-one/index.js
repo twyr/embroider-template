@@ -2,6 +2,15 @@
 import Component from '@glimmer/component';
 import debugLogger from 'ember-debug-logger';
 
+import {
+	getConfig,
+	getGlobalConfig,
+	getOwnConfig,
+	isTesting,
+	isDevelopingApp,
+	macroCondition
+} from '@embroider/macros';
+
 export default class VerySimpleOneComponent extends Component {
 	// #region Accessed Services
 	// #endregion
@@ -10,6 +19,13 @@ export default class VerySimpleOneComponent extends Component {
 	// #endregion
 
 	// #region Untracked Public Fields
+	addonConfig = JSON.stringify(
+		getConfig('@twyr/embroider-addon'),
+		null,
+		'\t'
+	);
+	addonOwnConfig = JSON.stringify(getOwnConfig(), null, '\t');
+	addonGlobalConfig = JSON.stringify(getGlobalConfig(), null, '\t');
 	// #endregion
 
 	// #region Constructor
@@ -32,6 +48,17 @@ export default class VerySimpleOneComponent extends Component {
 	// #endregion
 
 	// #region Computed Properties
+	get codeEnvironment() {
+		if (macroCondition(isDevelopingApp())) {
+			return 'DEVELOPMENT';
+		}
+
+		if (macroCondition(isTesting())) {
+			return 'TEST';
+		}
+
+		return 'PRODUCTION';
+	}
 	// #endregion
 
 	// #region Private Methods
