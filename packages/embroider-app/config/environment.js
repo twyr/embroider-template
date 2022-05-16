@@ -1,32 +1,33 @@
 'use strict';
 
+const importedConfig = require('./dual-build-config')?.config ?? {};
 module.exports = function (environment) {
-	let ENV = {
-		modulePrefix: 'embroider-app',
-		environment,
-		rootURL: '/',
-		locationType: 'history',
+	let ENV = Object.assign(
+		{},
+		{
+			modulePrefix: 'embroider-app',
+			environment,
+			rootURL: '/',
+			locationType: 'history',
 
-		'embroider-addon': {
-			insert: 'wtf'
-		},
-
-		EmberENV: {
-			FEATURES: {
-				// Here you can enable experimental features on an ember canary build
-				// e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+			EmberENV: {
+				FEATURES: {
+					// Here you can enable experimental features on an ember canary build
+					// e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+				},
+				EXTEND_PROTOTYPES: {
+					// Prevent Ember Data from overriding Date.parse.
+					Date: false
+				}
 			},
-			EXTEND_PROTOTYPES: {
-				// Prevent Ember Data from overriding Date.parse.
-				Date: false
+
+			APP: {
+				// Here you can pass flags/options to your application instance
+				// when it is created
 			}
 		},
-
-		APP: {
-			// Here you can pass flags/options to your application instance
-			// when it is created
-		}
-	};
+		importedConfig
+	);
 
 	if (environment === 'development') {
 		// ENV.APP.LOG_RESOLVER = true;

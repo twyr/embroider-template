@@ -1,7 +1,13 @@
 {{page-title 'Embroider Template: Test App'}}
 
-<h2 id='title'>Welcome to Embroider Template</h2>
+<h2 id='title'>Welcome to Embroider Template: Test App</h2>
 
-<VerySimpleOne />
+{{#if this.embroiderAddonConfig.verySimple1}}
+	<VerySimpleOne />
+{{/if}}
+
 <br />
-<VerySimpleTwo />
+
+{{#if this.embroiderAddonConfig.verySimple2}}
+	<VerySimpleTwo />
+{{/if}}

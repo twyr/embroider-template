@@ -1,12 +1,16 @@
 'use strict';
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-
+const importedConfig = require('./config/dual-build-config')?.config ?? {};
 module.exports = function (defaults) {
-	let app = new EmberApp(defaults, {
+	const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+	const app = new EmberApp(defaults, {
 		// Add options here
 		name: require('./package').name,
-		storeConfigInMeta: false
+		storeConfigInMeta: false,
+
+		'@embroider/macros': {
+			setConfig: Object.assign({}, importedConfig)
+		}
 	});
 
 	// Use `app.import` to add additional libraries to the generated
