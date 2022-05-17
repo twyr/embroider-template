@@ -21,7 +21,6 @@
 -   [Status](#status)
 -   [Why](#why)
 -   [Goals](#goals)
--   [Goals](#goals)
 -   [Contributing](#contributing)
     -   [Code of Conduct](#code-of-conduct)
     -   [Developing](#developing)
