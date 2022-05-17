@@ -15,7 +15,6 @@
 git clone https://github.com/twyr/embroider-template
 cd embroider-template
 npm i
-lerna bootstrap
 ```
 
 #### SETTING UP THE ENVIRONMENT
@@ -46,14 +45,14 @@ git config user.signingKey "GPG Key Id"
 
 #### BUILDING AND TESTING
 
-| Operation                 | NPM Script / Command  |
-| ------------------------- | --------------------- |
-| Building Everything       | lerna run build       |
-| Clean Building Everything | lerna run build:clean |
-| Linting                   | lerna run lint        |
-| Linting with fixes        | lerna run lint:fix    |
-| Running the Tests         | lerna run test        |
-|                           |                       |
+| Operation                 | NPM Script / Command             |
+| ------------------------- | -------------------------------- |
+| Building Everything       | npm run build --workspaces       |
+| Clean Building Everything | npm run build:clean --workspaces |
+| Linting                   | npm run lint --workspaces        |
+| Linting with fixes        | npm run lint:fix --workspaces    |
+| Running the Tests         | npm run test --workspaces        |
+|                           |                                  |
 
 #### EXTENDING THE CODE
 
