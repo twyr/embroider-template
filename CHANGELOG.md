@@ -1,6 +1,19 @@
 #### CHANGE LOG
 
 
+##### 18-May-2022
+
+feat: release 1.0 ([9764d54d7a077e5b0bf7b4aa4f9e28e16d64c855](https://github.com/twyr/embroider-template/commit/9764d54d7a077e5b0bf7b4aa4f9e28e16d64c855))
+
+docs(readme): updated for general release ([6ebd81c7c59e90d91d96cc5b5a6f24e14cc6a3fa](https://github.com/twyr/embroider-template/commit/6ebd81c7c59e90d91d96cc5b5a6f24e14cc6a3fa))
+
+
+##### 17-May-2022
+
+docs(readme): update status links ([7763e354926549d934604d3b2490ed5026dbe99d](https://github.com/twyr/embroider-template/commit/7763e354926549d934604d3b2490ed5026dbe99d))
+
+
+
 ##### 16-May-2022
 
 feat(test-app): showcase embroider build system ([7e350b41e9979a1c8423e6b6f2752feacb7e243f](https://github.com/twyr/embroider-template/commit/7e350b41e9979a1c8423e6b6f2752feacb7e243f))
