@@ -36,7 +36,7 @@ It consists of two packages - the Basic Addon itself, and an Ember App for testi
 
 | Category       | Status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Conventions    | [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)                                                                                                                                                                                                                                                 |
+| Conventions    | [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg)](https://conventionalcommits.org) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)                                                                                                                               |
 | Code Stats     | [![Languages](https://badgen.net/lgtm/langs/g/twyr/embroider-template)](https://lgtm.com/projects/g/twyr/embroider-template) ![GitHub repo size](https://img.shields.io/github/repo-size/twyr/embroider-template) [![LoC](https://badgen.net/lgtm/lines/g/twyr/embroider-template)](https://lgtm.com/projects/g/twyr/embroider-template) [![Language grade](https://badgen.net/lgtm/grade/g/twyr/embroider-template)](https://lgtm.com/projects/g/twyr/embroider-template/context:javascript) [![Coverage Status](https://coveralls.io/repos/github/twyr/embroider-template/badge.svg?branch=main)](https://coveralls.io/github/twyr/embroider-template?branch=main) |
 | Security       | [![Known Vulnerabilities](https://snyk.io/test/github/twyr/embroider-template/badge.svg?targetFile=package.json)](https://snyk.io/test/github/twyr/embroider-template?targetFile=package.json) [![Total alerts](https://img.shields.io/lgtm/alerts/g/twyr/embroider-template.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/twyr/embroider-template/alerts/) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@twyr/embroider-addon)                                                                                                                                                |
 |                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -48,7 +48,23 @@ It consists of two packages - the Basic Addon itself, and an Ember App for testi
 
 #### WHY
 
-Just because...
+The Embroider build system gets default configurations for addons from _two_ different places:
+
+1. The _options_ from the "main" / "build" file specified in the addon's [Ember Package Metadata](https://github.com/embroider-build/embroider/blob/main/SPEC.md#definitions)
+1. The _config()_ function from the same "main" / "build" file
+
+At App build time,these addon configurations are processed as:
+
+1. The _options_ object - merged with the _@embroider/macros_ key specified in the "ember-cli-build.js" file of the app
+1. The _config()_ return value - merged with the _config/environment.js_ file of the app
+
+The merged configs are accessible / usable in diffferent places:
+
+1. The merged _options_ object is available in the @embroider/macros artifacts - getConfig, getOwnConfig, etc.
+1. The merged _config()_ return value is available in the "contentFor" hooks
+
+This monorepo provides an _extremely trivial_ implementation of an addon / test-app pair that reads / uses a common configuration file
+called [dual-build-config.js](./packages/embroider-app/config/dual-build-config.js).
 
 #### GOALS
 
@@ -56,6 +72,17 @@ Ember-related goals:
 
 1. Build for [Ember 4.0+](https://emberjs.com) - with no expectation of backward compatibility
 1. Build using [Embroider](https://github.com/embroider-build/embroider) - aim for "Native Support"
+
+Addon goals::Showcase how to effectively integrate with / consume the Embroider build system artifacts:
+
+1. Use the [contentFor](https://github.com/embroider-build/embroider/blob/main/SPEC.md#contentfor) hooks to conditionally inject HTML at build time - based on config defined in [{{app}}/config/environment.js](./packages/embroider-app/config/environment.js)
+1. Use the [@embroider/macros](https://github.com/embroider-build/embroider/tree/main/packages/macros#readme) capabilities to conditionally include/exclude artifacts - based on config defined in [{{app}}/ember-cli-build.js](./packages/embroider-app/ember-cli-build.js)
+
+Developer Experience Goals::Provide a monorepo to be used as a template / jump-off point:
+
+1. Should be trivial to clone / install / build / run and see how the classical / embroider build systems interact
+1. Should be trivial to remove the artifacts exported by the example addon and add new ones
+1. Should be trivial to use the new artifacts in the example app
 
 #### CONTRIBUTING
 

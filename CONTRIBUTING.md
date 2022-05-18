@@ -7,7 +7,6 @@
     -   [Git Configuration](#setting-up-git-config-locally)
     -   [Generating the GPG key](#generating-the-gpg-key)
 -   [Building and Testing](#building-and-testing)
--   [Extending the Code](#extending-the-code)
 
 #### GETTING THE CODE
 
@@ -53,7 +52,3 @@ git config user.signingKey "GPG Key Id"
 | Linting with fixes        | npm run lint:fix --workspaces    |
 | Running the Tests         | npm run test --workspaces        |
 |                           |                                  |
-
-#### EXTENDING THE CODE
-
--   [ ] TODO: Add developer guide
