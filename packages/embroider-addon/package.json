@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-addon",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"ember-addon",
 		"embroider"
@@ -36,6 +36,7 @@
 	"bugs": {
 		"url": "https://github.com/twyr/embroider-template/issues"
 	},
+	"main": "addon-main.js",
 	"exports": {
 		"./*": "./dist/*",
 		"./addon-main.js": "./addon-main.js"
@@ -43,7 +44,7 @@
 	"files": [
 		"dist",
 		"addon-main.js",
-		"README.md"
+		"./../../README.md"
 	],
 	"dependencies": {
 		"@embroider/addon-shim": "1.6.0",

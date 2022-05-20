@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-app",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"ember",
 		"embroider"
@@ -50,7 +50,7 @@
 		"@embroider/webpack": "1.6.0",
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2",
-		"@twyr/embroider-addon": "1.0.0",
+		"@twyr/embroider-addon": "1.0.1",
 		"babel-eslint": "10.1.0",
 		"broccoli-asset-rev": "3.0.0",
 		"ember-auto-import": "2.4.1",
