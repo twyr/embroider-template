@@ -1,8 +1,6 @@
-'use strict';
-
 module.exports = {
-	'extends': ['@commitlint/config-conventional'],
-	'rules': {
+	extends: ['@commitlint/config-conventional'],
+	rules: {
 		'type-enum': [
 			2,
 			'always',
@@ -20,6 +18,8 @@ module.exports = {
 				'test',
 				'wip'
 			]
-		]
+		],
+
+		'body-max-length': [2, 'always', Infinity]
 	}
 };
