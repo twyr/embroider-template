@@ -51,7 +51,6 @@
 		"eslint-plugin-prettier": "4.0.0",
 		"eslint-plugin-security": "1.5.0",
 		"eslint-plugin-security-node": "1.1.1",
-		"git-cz": "4.9.0",
 		"git-split-diffs": "0.10.0",
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
