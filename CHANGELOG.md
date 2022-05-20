@@ -1,6 +1,12 @@
 #### CHANGE LOG
 
 
+##### 20-May-2022
+
+feat(addon): version 1.0.1 ([a9b900f5c575636473fed15beaa1d9f9bdc3989f](https://github.com/twyr/embroider-template/commit/a9b900f5c575636473fed15beaa1d9f9bdc3989f))
+
+
+
 ##### 18-May-2022
 
 feat: release 1.0 ([9764d54d7a077e5b0bf7b4aa4f9e28e16d64c855](https://github.com/twyr/embroider-template/commit/9764d54d7a077e5b0bf7b4aa4f9e28e16d64c855))
