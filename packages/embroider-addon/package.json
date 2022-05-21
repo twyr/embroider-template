@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/twyr/embroider-template/tree/main/packages/embroider-addon",
 	"license": "MITNFA",
 	"readme": "README.md",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"keywords": [
 		"ember-addon",
 		"embroider"
