@@ -34,12 +34,12 @@
 		"url": "https://github.com/twyr/embroider-template/issues"
 	},
 	"dependencies": {
-		"@embroider/addon-shim": "1.6.0",
+		"@embroider/addon-shim": "1.7.1",
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "17.0.0",
+		"@commitlint/cli": "17.0.1",
 		"@commitlint/config-conventional": "17.0.0",
 		"commitizen": "4.2.4",
 		"cz-customizable": "6.3.0",
@@ -54,7 +54,7 @@
 		"git-split-diffs": "0.10.0",
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
-		"lint-staged": "12.4.1"
+		"lint-staged": "12.4.2"
 	},
 	"scripts": {
 		"lint-staged": "npx lint-staged --allow-empty",
