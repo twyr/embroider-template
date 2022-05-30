@@ -42,6 +42,11 @@
 		"test": "tests"
 	},
 	"devDependencies": {
+		"@babel/core": "7.18.2",
+		"@babel/eslint-parser": "7.18.2",
+		"@babel/plugin-proposal-class-properties": "7.17.12",
+		"@babel/plugin-proposal-decorators": "7.18.2",
+		"@babel/plugin-proposal-private-methods": "7.17.12",
 		"@ember/optional-features": "2.0.0",
 		"@ember/test-helpers": "2.8.1",
 		"@embroider/compat": "1.7.1",
@@ -51,7 +56,6 @@
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2",
 		"@twyr/embroider-addon": "1.0.2",
-		"babel-eslint": "10.1.0",
 		"broccoli-asset-rev": "3.0.0",
 		"ember-auto-import": "2.4.2",
 		"ember-cli": "4.4.0",
