@@ -54,7 +54,7 @@
 		"git-split-diffs": "0.10.0",
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
-		"lint-staged": "12.4.2"
+		"lint-staged": "12.4.3"
 	},
 	"scripts": {
 		"lint-staged": "npx lint-staged --allow-empty",
