@@ -54,9 +54,11 @@
 		"git-split-diffs": "0.10.0",
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
-		"lint-staged": "12.4.3"
+		"lint-staged": "12.4.3",
+		"npm-check-updates": "13.0.3"
 	},
 	"scripts": {
+		"check-updates": "npx npm-check-updates -i -u && npm run check-updates --workspaces",
 		"lint-staged": "npx lint-staged --allow-empty",
 		"prepare": "is-ci || npx husky install"
 	},

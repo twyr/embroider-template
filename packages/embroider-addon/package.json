@@ -78,6 +78,7 @@
 	"scripts": {
 		"build": "npx rollup --config",
 		"build:clean": "mkdir -p ./dist && rm -rf ./dist && npm run build && npm run lint:fix",
+		"check-updates": "npx npm-check-updates -i -u",
 		"lint": "npm run lint:hbs && npm run lint:js && npm run lint:misc",
 		"lint:fix": "npm run lint:hbs:fix && npm run lint:js:fix && npm run lint:misc:fix",
 		"lint:hbs": "npx ember-template-lint './**/*.hbs'",
