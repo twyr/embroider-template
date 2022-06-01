@@ -1,13 +1,22 @@
 {{page-title 'Embroider Template: Test App'}}
 
-<h2 id='title'>Welcome to Embroider Template: Test App</h2>
+<div id='title' class='navbar bg-base-100 shadow-xl'>
+	<a class='btn btn-ghost normal-case text-xl' href='#'>Embroider Template:
+		Test App</a>
+</div>
 
-{{#if this.embroiderAddonConfig.verySimple1}}
-	<VerySimpleOne />
-{{/if}}
+<div class='card bg-base-100 mt-4 shadow-xl'>
+	<div class='card-body'>
+		{{#if this.embroiderAddonConfig.verySimple1}}
+			<VerySimpleOne />
+		{{/if}}
+	</div>
+</div>
 
-<br />
-
-{{#if this.embroiderAddonConfig.verySimple2}}
-	<VerySimpleTwo />
-{{/if}}
+<div class='card bg-base-100 mt-4 shadow-xl'>
+	<div class='card-body'>
+		{{#if this.embroiderAddonConfig.verySimple2}}
+			<VerySimpleTwo />
+		{{/if}}
+	</div>
+</div>
