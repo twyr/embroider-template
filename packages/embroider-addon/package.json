@@ -73,7 +73,7 @@
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-prettier": "4.0.0",
 		"prettier": "2.6.2",
-		"rollup": "2.75.3"
+		"rollup": "2.75.4"
 	},
 	"scripts": {
 		"build": "npx rollup --config",
