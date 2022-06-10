@@ -34,7 +34,7 @@
 		"url": "https://github.com/twyr/embroider-template/issues"
 	},
 	"dependencies": {
-		"@embroider/addon-shim": "1.7.1",
+		"@embroider/addon-shim": "1.8.0",
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2"
 	},
