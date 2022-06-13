@@ -64,7 +64,7 @@ The merged configs are accessible / usable in diffferent places:
 1. The merged _config()_ return value is available in the "contentFor" hooks
 
 This monorepo provides an _extremely trivial_ implementation of an addon / test-app pair that reads / uses a common configuration file
-called [dual-build-config.js](./packages/embroider-app/config/dual-build-config.js).
+called [dual-build-config.js](./addons/embroider-app/config/dual-build-config.js).
 
 #### GOALS
 
@@ -75,8 +75,8 @@ Ember-related goals:
 
 Addon goals::Showcase how to effectively integrate with / consume the Embroider build system artifacts:
 
-1. Use the [contentFor](https://github.com/embroider-build/embroider/blob/main/SPEC.md#contentfor) hooks to conditionally inject HTML at build time - based on config defined in [{{app}}/config/environment.js](./packages/embroider-app/config/environment.js)
-1. Use the [@embroider/macros](https://github.com/embroider-build/embroider/tree/main/packages/macros#readme) capabilities to conditionally include/exclude artifacts - based on config defined in [{{app}}/ember-cli-build.js](./packages/embroider-app/ember-cli-build.js)
+1. Use the [contentFor](https://github.com/embroider-build/embroider/blob/main/SPEC.md#contentfor) hooks to conditionally inject HTML at build time - based on config defined in [{{app}}/config/environment.js](./addons/embroider-app/config/environment.js)
+1. Use the [@embroider/macros](https://github.com/embroider-build/embroider/tree/main/addons/macros#readme) capabilities to conditionally include/exclude artifacts - based on config defined in [{{app}}/ember-cli-build.js](./addons/embroider-app/ember-cli-build.js)
 
 Developer Experience Goals::Provide a monorepo to be used as a template / jump-off point:
 
