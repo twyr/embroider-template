@@ -42,7 +42,7 @@
 		"test": "tests"
 	},
 	"devDependencies": {
-		"@babel/core": "7.18.2",
+		"@babel/core": "7.18.5",
 		"@babel/eslint-parser": "7.18.2",
 		"@babel/plugin-proposal-class-properties": "7.17.12",
 		"@babel/plugin-proposal-decorators": "7.18.2",
@@ -78,7 +78,7 @@
 		"ember-page-title": "7.0.0",
 		"ember-qunit": "5.1.5",
 		"ember-resolver": "8.0.3",
-		"ember-source": "4.4.1",
+		"ember-source": "4.5.0",
 		"ember-template-lint": "4.10.0",
 		"eslint": "8.17.0",
 		"eslint-config-prettier": "8.5.0",
