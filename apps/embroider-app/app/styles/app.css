@@ -1577,14 +1577,23 @@ html {
     outline: 2px solid hsl(259 94% 51%);
     outline: 2px solid hsl(var(--p))
 }
-.btn-group > .btn:not(:first-of-type) {
+.btn-group:not(.btn-group-vertical) > .btn:not(:first-of-type) {
     margin-left: -1px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px
 }
-.btn-group > .btn:not(:last-of-type) {
+.btn-group:not(.btn-group-vertical) > .btn:not(:last-of-type) {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px
+}
+.btn-group-vertical > .btn:not(:first-of-type) {
+    margin-top: -1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px
+}
+.btn-group-vertical > .btn:not(:last-of-type) {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px
 }
 @-webkit-keyframes button-pop {
     0% {
