@@ -34,7 +34,7 @@
 		"url": "https://github.com/twyr/embroider-template/issues"
 	},
 	"dependencies": {
-		"@embroider/addon-shim": "1.8.0",
+		"@embroider/addon-shim": "1.8.3",
 		"@glimmer/component": "1.1.2",
 		"@glimmer/tracking": "1.1.2"
 	},
@@ -42,10 +42,10 @@
 		"@commitlint/cli": "17.0.3",
 		"@commitlint/config-conventional": "17.0.3",
 		"commitizen": "4.2.4",
-		"cz-customizable": "6.7.0",
-		"eslint": "8.18.0",
+		"cz-customizable": "6.9.0",
+		"eslint": "8.19.0",
 		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-editorconfig": "3.2.0",
+		"eslint-plugin-editorconfig": "4.0.2",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-node": "11.1.0",
 		"eslint-plugin-prettier": "4.2.1",
@@ -55,7 +55,7 @@
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
 		"lint-staged": "13.0.3",
-		"npm-check-updates": "15.0.1"
+		"npm-check-updates": "15.0.2"
 	},
 	"scripts": {
 		"check-updates": "npx npm-check-updates -i -u && npm run check-updates --workspaces",
