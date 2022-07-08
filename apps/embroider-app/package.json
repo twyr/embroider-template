@@ -61,7 +61,7 @@
 		"bind-decorator": "1.0.11",
 		"broccoli-asset-rev": "3.0.0",
 		"csso": "5.0.3",
-		"daisyui": "2.18.0",
+		"daisyui": "2.18.1",
 		"ember-auto-import": "2.4.2",
 		"ember-cli": "4.4.0",
 		"ember-cli-app-version": "5.0.0",
@@ -102,7 +102,7 @@
 		"stylelint-config-standard-scss": "4.0.0",
 		"stylelint-order": "5.0.0",
 		"stylelint-prettier": "2.0.0",
-		"tailwindcss": "3.1.4",
+		"tailwindcss": "3.1.5",
 		"thread-loader": "3.0.4",
 		"webpack": "5.73.0"
 	},
