@@ -1753,6 +1753,30 @@ html {
                 transform: translateY(0)
     }
 }
+@-webkit-keyframes toast-pop {
+    0% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1
+    }
+}
+@keyframes toast-pop {
+    0% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1
+    }
+}
 .card-compact .card-body {
     padding: 1rem;
     font-size: 0.875rem;

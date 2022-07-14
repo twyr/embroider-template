@@ -55,7 +55,7 @@
 		"husky": "8.0.1",
 		"is-ci": "3.0.1",
 		"lint-staged": "13.0.3",
-		"npm-check-updates": "15.2.1"
+		"npm-check-updates": "15.3.0"
 	},
 	"scripts": {
 		"check-updates": "npx npm-check-updates -i -u && npm run check-updates --workspaces",
