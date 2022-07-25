@@ -42,10 +42,10 @@
 		"test": "tests"
 	},
 	"devDependencies": {
-		"@babel/core": "7.18.6",
-		"@babel/eslint-parser": "7.18.2",
+		"@babel/core": "7.18.9",
+		"@babel/eslint-parser": "7.18.9",
 		"@babel/plugin-proposal-class-properties": "7.18.6",
-		"@babel/plugin-proposal-decorators": "7.18.6",
+		"@babel/plugin-proposal-decorators": "7.18.9",
 		"@babel/plugin-proposal-private-methods": "7.18.6",
 		"@ember/optional-features": "2.0.0",
 		"@ember/test-helpers": "2.8.1",
@@ -61,7 +61,7 @@
 		"bind-decorator": "1.0.11",
 		"broccoli-asset-rev": "3.0.0",
 		"csso": "5.0.4",
-		"daisyui": "2.19.0",
+		"daisyui": "2.20.0",
 		"ember-auto-import": "2.4.2",
 		"ember-cli": "4.5.0",
 		"ember-cli-app-version": "5.0.0",
@@ -82,7 +82,7 @@
 		"ember-template-lint": "4.10.1",
 		"eslint": "8.20.0",
 		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-ember": "10.6.1",
+		"eslint-plugin-ember": "11.0.2",
 		"eslint-plugin-node": "11.1.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"eslint-plugin-qunit": "7.3.1",
@@ -104,7 +104,7 @@
 		"stylelint-prettier": "2.0.0",
 		"tailwindcss": "3.1.6",
 		"thread-loader": "3.0.4",
-		"webpack": "5.73.0"
+		"webpack": "5.74.0"
 	},
 	"scripts": {
 		"build": "npm run postcss && ember build --environment=production",
