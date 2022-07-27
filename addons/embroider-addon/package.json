@@ -64,16 +64,16 @@
 		"@babel/plugin-proposal-private-methods": "7.18.6",
 		"@embroider/addon-dev": "1.8.3",
 		"@rollup/plugin-babel": "5.3.1",
-		"ember-cli": "4.5.0",
+		"ember-cli": "4.6.0",
 		"ember-template-lint": "4.10.1",
 		"ember-template-lint-plugin-prettier": "4.0.0",
 		"eslint": "8.20.0",
 		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-ember": "11.0.2",
+		"eslint-plugin-ember": "11.0.3",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"prettier": "2.7.1",
-		"rollup": "2.77.0"
+		"rollup": "2.77.1"
 	},
 	"scripts": {
 		"build": "npx rollup --config",
