@@ -1517,7 +1517,7 @@ html {
     --glass-border-opacity: 15%
 }
 .btn.glass:focus-visible {
-    outline: 2px solid 0 0 2px currentColor
+    outline: 2px solid currentColor
 }
 .btn-ghost {
     border-width: 1px;
@@ -1533,7 +1533,7 @@ html {
     --tw-bg-opacity: 0.2
 }
 .btn-ghost:focus-visible {
-    outline: 2px solid 0 0 2px currentColor
+    outline: 2px solid currentColor
 }
 .btn-disabled, 
   .btn-disabled:hover, 
