@@ -1755,13 +1755,13 @@ html {
         opacity: 1
     }
 }
-.btn-group .btn:not(:first-of-type):not(:last-of-type), .btn-group.btn-group-horizontal .btn:not(:first-of-type):not(:last-of-type) {
+.btn-group .btn:not(:first-child):not(:last-child), .btn-group.btn-group-horizontal .btn:not(:first-child):not(:last-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
-.btn-group .btn:first-of-type:not(:last-of-type),  .btn-group.btn-group-horizontal .btn:first-of-type:not(:last-of-type) {
+.btn-group .btn:first-child:not(:last-child),  .btn-group.btn-group-horizontal .btn:first-child:not(:last-child) {
     margin-left: -1px;
     margin-top: -0px;
     border-top-left-radius: 0.5rem;
@@ -1771,7 +1771,7 @@ html {
     border-bottom-left-radius: var(--rounded-btn, 0.5rem);
     border-bottom-right-radius: 0
 }
-.btn-group .btn:last-of-type:not(:first-of-type), .btn-group.btn-group-horizontal .btn:last-of-type:not(:first-of-type) {
+.btn-group .btn:last-child:not(:first-child), .btn-group.btn-group-horizontal .btn:last-child:not(:first-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0.5rem;
     border-top-right-radius: var(--rounded-btn, 0.5rem);
@@ -1779,7 +1779,7 @@ html {
     border-bottom-right-radius: 0.5rem;
     border-bottom-right-radius: var(--rounded-btn, 0.5rem)
 }
-.btn-group.btn-group-vertical .btn:first-of-type:not(:last-of-type) {
+.btn-group.btn-group-vertical .btn:first-child:not(:last-child) {
     margin-left: -0px;
     margin-top: -1px;
     border-top-left-radius: 0.5rem;
@@ -1789,7 +1789,7 @@ html {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
-.btn-group.btn-group-vertical .btn:last-of-type:not(:first-of-type) {
+.btn-group.btn-group-vertical .btn:last-child:not(:first-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.5rem;
