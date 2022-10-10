@@ -65,7 +65,7 @@
 		"@embroider/addon-dev": "2.0.0",
 		"@rollup/plugin-babel": "6.0.0",
 		"ember-cli": "4.7.0",
-		"ember-template-lint": "4.14.0",
+		"ember-template-lint": "4.15.0",
 		"ember-template-lint-plugin-prettier": "4.0.0",
 		"eslint": "8.25.0",
 		"eslint-config-prettier": "8.5.0",
