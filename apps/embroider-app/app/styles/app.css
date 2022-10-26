@@ -1325,11 +1325,11 @@ html {
     color: hsl(0 0% 100% / var(--tw-text-opacity));
     color: hsl(var(--nc) / var(--tw-text-opacity))
 }
-.btn-disabled, 
+.btn-disabled,
   .btn[disabled] {
     pointer-events: none
 }
-.btn.loading, 
+.btn.loading,
     .btn.loading:hover {
     pointer-events: none
 }
@@ -1443,7 +1443,7 @@ html {
     border-radius: 1rem;
     border-radius: var(--rounded-box, 1rem)
 }
-.card.image-full:before, 
+.card.image-full:before,
     .card.image-full > * {
     grid-column-start: 1;
     grid-row-start: 1
@@ -1493,7 +1493,7 @@ html {
     -webkit-transform: scale(var(--btn-focus-scale, 0.95));
             transform: scale(var(--btn-focus-scale, 0.95))
 }
-.btn:hover, 
+.btn:hover,
     .btn-active {
     --tw-border-opacity: 1;
     border-color: hsl(219 14% 22% / var(--tw-border-opacity));
@@ -1521,7 +1521,7 @@ html {
     background-color: transparent;
     color: currentColor
 }
-.btn-ghost:hover, 
+.btn-ghost:hover,
     .btn-ghost.btn-active {
     --tw-border-opacity: 0;
     background-color: hsl(215 28% 17% / var(--tw-bg-opacity));
@@ -1531,9 +1531,9 @@ html {
 .btn-ghost:focus-visible {
     outline: 2px solid currentColor
 }
-.btn-disabled, 
-  .btn-disabled:hover, 
-  .btn[disabled], 
+.btn-disabled,
+  .btn-disabled:hover,
+  .btn[disabled],
   .btn[disabled]:hover {
     --tw-border-opacity: 0;
     background-color: hsl(219 14% 28% / var(--tw-bg-opacity));
@@ -1543,21 +1543,21 @@ html {
     color: hsl(var(--bc) / var(--tw-text-opacity));
     --tw-text-opacity: 0.2
 }
-.btn.loading.btn-square:before, 
+.btn.loading.btn-square:before,
     .btn.loading.btn-circle:before {
     margin-right: 0px
 }
-.btn.loading.btn-xl:before, 
+.btn.loading.btn-xl:before,
     .btn.loading.btn-lg:before {
     height: 1.25rem;
     width: 1.25rem
 }
-.btn.loading.btn-sm:before, 
+.btn.loading.btn-sm:before,
     .btn.loading.btn-xs:before {
     height: 0.75rem;
     width: 0.75rem
 }
-.btn-group > input[type="radio"]:checked.btn, 
+.btn-group > input[type="radio"].btn:checked,
   .btn-group > .btn-active {
     --tw-border-opacity: 1;
     border-color: hsl(259 94% 51% / var(--tw-border-opacity));
@@ -1761,7 +1761,7 @@ html {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
-.btn-group .btn:first-child:not(:last-child),  .btn-group.btn-group-horizontal .btn:first-child:not(:last-child) {
+.btn-group .btn:first-child:not(:last-child), .btn-group.btn-group-horizontal .btn:first-child:not(:last-child) {
     margin-left: -1px;
     margin-top: -0px;
     border-top-left-radius: 0.5rem;
